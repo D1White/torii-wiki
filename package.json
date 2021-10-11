@@ -2,7 +2,7 @@
   "name": "torii-wiki",
   "version": "0.1.1",
   "scripts": {
-    "ghpages": "git subtree push --prefix build origin gh-pages",
+    "ghpages": "npm run build build && cp -R build docs",
     "build": "gulp build --production",
     "start": "gulp",
     "precommit": "lint-staged",
